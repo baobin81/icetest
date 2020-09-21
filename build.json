@@ -6,7 +6,7 @@
         "themePackage": "@alifd/theme-design-pro"
       }
     ],
-    ["build-plugin-ice-auth"],
+    "build-plugin-ice-auth",
     [
       "build-plugin-moment-locales",
       {
@@ -15,6 +15,6 @@
         ]
       }
     ]
-   
+
   ]
 }
