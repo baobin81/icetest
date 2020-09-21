@@ -17,7 +17,7 @@ const appConfig= {
       // 获取权限数据
       return {
         // 没登录则返回一个空对象（什么权限都没有）
-        auth: {admin: false}
+        auth: {admin: true}
       };
     }
   },

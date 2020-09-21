@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Input, Message, Form, Divider, Checkbox, Icon } from '@alifd/next';
-
+import { useHistory } from 'ice';
 import { useInterval } from './utils';
 import styles from './index.module.scss';
 
@@ -31,7 +31,7 @@ const LoginBlock: React.FunctionComponent<LoginProps> = (props = { dataSource: D
   const {
     dataSource = DEFAULT_DATA,
   } = props;
-
+  const iceHistory = useHistory();
   const [postData, setValue] = useState(dataSource);
 
   const [isRunning, checkRunning] = useState(false);
@@ -65,6 +65,7 @@ const LoginBlock: React.FunctionComponent<LoginProps> = (props = { dataSource: D
     }
     console.log('values:', values);
     Message.success('登录成功');
+    iceHistory.push('/dashboard/analysis')
   };
 
   const phoneForm = <>

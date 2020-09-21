@@ -55,6 +55,7 @@ const routerConfig = [
       },
     ],
   },
+
   {
     path: '/',
     component: BasicLayout,
