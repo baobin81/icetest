@@ -53,6 +53,7 @@ const Analysis = () => {
 };
 
 Analysis.pageConfig={
-  auth:["admin"]
+  auth:["admin"],
+  title: '全景客信息技术有限公司资源管理系统'
 }
 export default Analysis;
